@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { PAGE_ORIGIN } from "../constants";
+import { Link } from "@yamori-design/react-components";
 
 const PROJECTS_LIST_MAP: Record<
   string,
@@ -34,9 +35,9 @@ export const ProjectsSection: React.FC = () => {
             <ul>
               {projects.map(({ name, link, descriptionKey }) => (
                 <li key="name">
-                  <a href={link} target="_blank">
+                  <Link href={link} target="_blank">
                     {name}
-                  </a>
+                  </Link>
                   <p>{t(`projectDescription.${descriptionKey}`)}</p>
                 </li>
               ))}

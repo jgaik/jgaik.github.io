@@ -1,3 +1,8 @@
+import {
+  LanguageSelect,
+  Link,
+  ThemeSelect,
+} from "@yamori-design/react-components";
 import { useTranslation } from "react-i18next";
 
 const NAV_LINKS_MAP: Record<string, string> = {
@@ -7,17 +12,24 @@ const NAV_LINKS_MAP: Record<string, string> = {
 };
 
 export const NavigationBar: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
-    <nav>
-      <ul>
-        {Object.entries(NAV_LINKS_MAP).map(([key, id]) => (
-          <li key={key}>
-            <a href={`#${id}`}>{t(key)}</a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul>
+          {Object.entries(NAV_LINKS_MAP).map(([key, id]) => (
+            <li key={key}>
+              <Link href={`#${id}`}>{t(key)}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <ThemeSelect />
+      <LanguageSelect
+        supportedLanguages={["en", "ja"]}
+        onChange={i18n.changeLanguage}
+      />
+    </header>
   );
 };
