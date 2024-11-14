@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { BemClassNamesCreator, Link } from "@yamori-design/react-components";
+import { Link } from "@yamori-design/react-components";
 import "./contact-section.scss";
-import { useMemo } from "react";
 
 const CONTACT_LINKS: Array<
   Record<"name" | "link" | "iconSource" | "caption", string>
@@ -36,55 +35,36 @@ const CONTACT_LINKS: Array<
   },
 ];
 
-const ContactSectionLink: React.FC<
-  (typeof CONTACT_LINKS)[number] & { className: string }
-> = ({ name, link, iconSource, caption, className }) => {
-  const bemClassNames = useMemo(
-    () =>
-      BemClassNamesCreator.create(
-        [
-          "contact-section-link",
-          {
-            [name.toLowerCase()]: true,
-          },
-        ],
-        className
-      ),
-    [name, className]
-  );
-
+const ContactSectionLink: React.FC<(typeof CONTACT_LINKS)[number]> = ({
+  name,
+  link,
+  iconSource,
+  caption,
+}) => {
   return (
     <Link
       href={link}
       target="_blank"
-      className={bemClassNames["contact-section-link"]}
+      className={name.toLowerCase()}
+      title={name}
     >
       <img src={iconSource} alt={name} />
-      {`${name}: ${caption}`}
+      {caption}
     </Link>
   );
 };
 
 export const ContactSection: React.FC = () => {
-  const { t } = useTranslation();
-
-  const bemClassNames = useMemo(
-    () =>
-      BemClassNamesCreator.create("contact-section", undefined, "list", "link"),
-    []
-  );
+  const { t } = useTranslation(undefined, { keyPrefix: "contactSection" });
 
   return (
-    <section id="contact" className={bemClassNames["contact-section"]}>
-      <h4>{t("contact")}</h4>
+    <section id="contact" className="contact-section">
+      <h4>{t("title")}</h4>
       <address>
-        <ul className={bemClassNames["list"]}>
+        <ul>
           {CONTACT_LINKS.map((contactLink) => (
             <li key={contactLink.name}>
-              <ContactSectionLink
-                {...contactLink}
-                className={bemClassNames["link"]}
-              />
+              <ContactSectionLink {...contactLink} />
             </li>
           ))}
         </ul>

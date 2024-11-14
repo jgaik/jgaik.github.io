@@ -1,11 +1,23 @@
 {
-  "home": "ホームページ",
-  "projects": "プロジェクト",
-  "contact": "連絡",
-  "individual": "個人",
-  "contributing": "協力",
-  "projectDescription": {
-    "yamoriDesign": "TODO Personal design system implementation used for my web projects.",
-    "papuApp": "TODO Small start-up project aimed to improve orders management for small restaurants."
+  "homeSection": {
+    "title": "J. Gaik ページ",
+    "subtitle": "TODO"
+  },
+  "aboutMeSection": {
+    "title": "自己紹介",
+    "introduction": "TODO",
+    "moreInfo": "TODO <l>link</l>"
+  },
+  "projectsSection": {
+    "title": "プロジェクト",
+    "individual": "個人",
+    "contributing": "協力",
+    "projectDescription": {
+      "yamoriDesign": "TODO Personal design system implementation used for my web projects.",
+      "papuApp": "TODO Small start-up project aimed to improve orders management for small restaurants."
+    }
+  },
+  "contactSection": {
+    "title": "連絡"
   }
 }
