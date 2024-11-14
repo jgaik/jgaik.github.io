@@ -1,26 +1,35 @@
 import {
   LanguageSelect,
   Link,
+  Separator,
   ThemeSelect,
 } from "@yamori-design/react-components";
+import { ElementRef, forwardRef } from "react";
 import { useTranslation } from "react-i18next";
+import { HomeIcon } from "@yamori-design/icons";
+import "./navigation-bar.scss";
 
 const NAV_LINKS_MAP: Record<string, string> = {
-  home: "top",
-  projects: "projects",
-  contact: "contact",
+  aboutMeSection: "about-me",
+  projectsSection: "projects",
+  contactSection: "contact",
 };
 
-export const NavigationBar: React.FC = () => {
+export const NavigationBar = forwardRef<ElementRef<"header">>((_, ref) => {
   const { t, i18n } = useTranslation();
 
   return (
-    <header>
+    <header className="navigation-bar" ref={ref}>
       <nav>
         <ul>
+          <li>
+            <Link href="#home">
+              <HomeIcon />
+            </Link>
+          </li>
           {Object.entries(NAV_LINKS_MAP).map(([key, id]) => (
             <li key={key}>
-              <Link href={`#${id}`}>{t(key)}</Link>
+              <Link href={`#${id}`}>{t(`${key}.title`)}</Link>
             </li>
           ))}
         </ul>
@@ -30,6 +39,7 @@ export const NavigationBar: React.FC = () => {
         supportedLanguages={["en", "ja"]}
         onChange={i18n.changeLanguage}
       />
+      <Separator />
     </header>
   );
-};
+});

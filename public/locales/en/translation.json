@@ -1,11 +1,23 @@
 {
-  "home": "Home",
-  "projects": "Projects",
-  "contact": "Contact",
-  "individual": "Individual",
-  "collaborative": "Collaborative",
-  "projectDescription": {
-    "yamoriDesign": "Personal design system implementation used for my web projects.",
-    "papuApp": "Small start-up project aimed to improve orders management for small restaurants."
+  "homeSection": {
+    "title": "J. Gaik Page",
+    "subtitle": "This is a home page for my web projects."
+  },
+  "aboutMeSection": {
+    "title": "About me",
+    "introduction": "This is an introduction",
+    "moreInfo": "This is more info with <l>link</l>"
+  },
+  "projectsSection": {
+    "title": "Projects",
+    "individual": "Individual",
+    "collaborative": "Collaborative",
+    "projectDescription": {
+      "yamoriDesign": "Personal design system implementation used for my web projects.",
+      "papuApp": "Small start-up project aimed to improve orders management for small restaurants."
+    }
+  },
+  "contactSection": {
+    "title": "Contact"
   }
 }

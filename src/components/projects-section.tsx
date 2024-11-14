@@ -23,11 +23,11 @@ const PROJECTS_LIST_MAP: Record<
 };
 
 export const ProjectsSection: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(undefined, { keyPrefix: "projectsSection" });
 
   return (
     <article id="projects">
-      <h4>{t("projects")}</h4>
+      <h4>{t("title")}</h4>
       <ul>
         {Object.entries(PROJECTS_LIST_MAP).map(([categoryKey, projects]) => (
           <li key={categoryKey}>

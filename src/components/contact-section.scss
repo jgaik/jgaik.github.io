@@ -1,18 +1,18 @@
 @use "@yamori-design/styles/src/mixins";
 
 .contact-section {
-  &__list {
+  ul {
     list-style: none;
     padding: unset;
-  }
 
-  &__link img {
-    width: 1rem;
+    a img {
+      width: 1rem;
+    }
   }
 }
 
 @include mixins.within-yamori-theme(dark) {
-  .contact-section-link--github img {
+  .contact-section a.github img {
     filter: invert(1);
   }
 }
