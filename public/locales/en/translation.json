@@ -5,11 +5,12 @@
   },
   "aboutMeSection": {
     "title": "About me",
-    "introduction": "This is an introduction",
-    "moreInfo": "This is more info with <l>link</l>"
+    "introduction": "I’m a software engineer with a strong focus on front-end development, backed by a foundation in back-end programming. My journey into coding began with a passion for creating tools that automate and improve daily tasks. I enjoy the freedom that programming offers, where design and implementation possibilities are virtually limitless.\nBeyond work, I’m passionate about personal growth. I enjoy calisthenics, acrobatics, and learning Japanese, as well as experimenting in the kitchen. My approach to life is rooted in organization: breaking tasks into manageable chunks and prioritizing for efficiency. I focus on completing 80% of a task quickly to achieve the best result and refine it over time.",
+    "resumeTitle": "Explore My Resume",
+    "resumeInfo": "Curious about my background and experience? <a>View my resume</a> with an overview of my education and work history."
   },
   "projectsSection": {
-    "title": "Projects",
+    "title": "My Projects",
     "individual": "Individual",
     "collaborative": "Collaborative",
     "projectDescription": {
@@ -18,6 +19,6 @@
     }
   },
   "contactSection": {
-    "title": "Contact"
+    "title": "Contact me"
   }
 }

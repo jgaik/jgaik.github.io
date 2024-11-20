@@ -10,10 +10,15 @@ export const AboutMeSection: React.FC = () => {
   return (
     <section id="about-me">
       <h4>{t("title")}</h4>
-      <p>{t("introduction")}</p>
+      {t("introduction")
+        .split("\n")
+        .map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+      <h5>{t("resumeTitle")}</h5>
       <Trans
         parent="p"
-        i18nKey="moreInfo"
+        i18nKey="resumeInfo"
         t={t}
         components={{
           a: (
