@@ -1,13 +1,13 @@
 {
   "homeSection": {
-    "title": "J. Gaik ページ",
-    "subtitle": "TODO"
+    "title": "J. Gaikのページ",
+    "subtitle": "こんにちは、ヤクブです。こちらは私のウェブプロジェクトのポートフォリオのホームページです。よろしくお願いします。"
   },
   "aboutMeSection": {
     "title": "自己紹介",
-    "introduction": "I’m a software engineer with a strong focus on front-end development, backed by a foundation in back-end programming. My journey into coding began with a passion for creating tools that automate and improve daily tasks. I enjoy the freedom that programming offers, where design and implementation possibilities are virtually limitless.<br />One of my key strengths is the ability to quickly analyze code, identify inefficiencies, and refactor it to align with the intended goals. Whether it’s last-minute bug fixes or quick pivots under time pressure, I thrive on delivering quality solutions.<br />Beyond work, I’m passionate about personal growth. I enjoy calisthenics, acrobatics, and learning Japanese, as well as experimenting in the kitchen. My approach to life is rooted in organization: breaking tasks into manageable chunks and prioritizing for efficiency. Following the 80:20 principle, I focus on completing 80% of a task quickly to achieve the best result and refine it over time.",
-    "resumeTitle": "Explore My Resume",
-    "resumeInfo": "Curious about my background and experience? <a>View my resume</a> with an overview of my education and work history."
+    "introduction": "私はソフトウェアエンジニアです。フロントエンド開発に注力していますが、バックエンドプログラミングの経験があります。日々のタスクを自動化するツールを作るのことが好きだから、プログラミングし始めました。",
+    "resumeTitle": "履歴書を見る",
+    "resumeInfo": "私の経歴や経験に興味がありますか？ 学歴や職歴の概要を記載した<a>履歴書をご覧ください</a>。"
   },
   "projectsSection": {
     "title": "プロジェクト",
@@ -19,6 +19,6 @@
     }
   },
   "contactSection": {
-    "title": "連絡"
+    "title": "連絡しよう"
   }
 }

@@ -1,11 +1,11 @@
 {
   "homeSection": {
     "title": "J. Gaik Page",
-    "subtitle": "This is a home page for my web projects."
+    "subtitle": "Hi, I'm Jacob and this is a home page for my web projects portfolio. Nice to meet You."
   },
   "aboutMeSection": {
     "title": "About me",
-    "introduction": "I’m a software engineer with a strong focus on front-end development, backed by a foundation in back-end programming. My journey into coding began with a passion for creating tools that automate and improve daily tasks. I enjoy the freedom that programming offers, where design and implementation possibilities are virtually limitless.\nBeyond work, I’m passionate about personal growth. I enjoy calisthenics, acrobatics, and learning Japanese, as well as experimenting in the kitchen. My approach to life is rooted in organization: breaking tasks into manageable chunks and prioritizing for efficiency. I focus on completing 80% of a task quickly to achieve the best result and refine it over time.",
+    "introduction": "I’m a software engineer with a strong focus on front-end development, backed by a foundation in back-end programming. My journey into coding began with a passion for creating tools that automate and improve daily tasks. I enjoy the freedom that programming offers, where design and implementation possibilities are virtually limitless.\nBeyond work, I’m passionate about personal growth. I enjoy calisthenics, acrobatics, and learning Japanese, as well as experimenting in the kitchen. My approach to life is rooted in organization and simplicity: breaking tasks into manageable chunks and prioritizing not over-complicated solutions. I focus on completing 80% of a task quickly to achieve the result fast and then refine it over time.",
     "resumeTitle": "Explore My Resume",
     "resumeInfo": "Curious about my background and experience? <a>View my resume</a> with an overview of my education and work history."
   },
