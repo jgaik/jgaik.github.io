@@ -13,7 +13,7 @@ export const AboutMeSection: React.FC = () => {
       {t("introduction")
         .split("\n")
         .map((paragraph) => (
-          <p>{paragraph}</p>
+          <p key={paragraph}>{paragraph}</p>
         ))}
       <h5>{t("resumeTitle")}</h5>
       <Trans

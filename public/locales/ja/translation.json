@@ -15,6 +15,7 @@
     "contributing": "協力",
     "projectDescription": {
       "yamoriDesign": "TODO Personal design system implementation used for my web projects.",
+      "localChess": "TODO Local Chess implementation.",
       "papuApp": "TODO Small start-up project aimed to improve orders management for small restaurants."
     }
   },

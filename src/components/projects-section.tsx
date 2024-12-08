@@ -12,6 +12,11 @@ const PROJECTS_LIST_MAP: Record<
       link: PAGE_ORIGIN + "/yamori-design",
       descriptionKey: "yamoriDesign",
     },
+    {
+      name: "Local Chess",
+      link: PAGE_ORIGIN + "/local-chess",
+      descriptionKey: "localChess",
+    },
   ],
   collaborative: [
     {
@@ -34,7 +39,7 @@ export const ProjectsSection: React.FC = () => {
             <h6>{t(categoryKey)}</h6>
             <ul>
               {projects.map(({ name, link, descriptionKey }) => (
-                <li key="name">
+                <li key={name}>
                   <Link href={link} target="_blank">
                     {name}
                   </Link>
