@@ -1,32 +1,42 @@
-import React, { ElementRef, useLayoutEffect, useRef } from "react";
+import React from "react";
 import {
   AboutMeSection,
   ContactSection,
   HomeSection,
-  NavigationBar,
   ProjectsSection,
 } from "./components";
-import "./app.scss";
+import {
+  NavigationBarLayout,
+  NavigationBarLayoutProps,
+} from "@yamori-design/react-components";
+import { useTranslation } from "react-i18next";
+
+const NAV_LINKS_MAP: Record<string, string> = {
+  aboutMeSection: "about-me",
+  projectsSection: "projects",
+  contactSection: "contact",
+};
 
 export const App: React.FC = () => {
-  const contentRef = useRef<ElementRef<"div">>(null);
-  const headerRef = useRef<ElementRef<typeof NavigationBar>>(null);
+  const { t } = useTranslation();
 
-  useLayoutEffect(() => {
-    if (!contentRef.current || !headerRef.current) return;
-
-    contentRef.current.style.top = `${headerRef.current.clientHeight}px`;
-  }, []);
+  const links = Object.entries(NAV_LINKS_MAP).map<
+    NavigationBarLayoutProps["links"][number]
+  >(([key, id]) => ({
+    href: `#${id}`,
+    children: t(`${key}.title`),
+  }));
 
   return (
-    <>
-      <NavigationBar ref={headerRef} />
-      <div className="app-content" ref={contentRef}>
-        <HomeSection />
-        <AboutMeSection />
-        <ProjectsSection />
-        <ContactSection />
-      </div>
-    </>
+    <NavigationBarLayout
+      languageSelectProps={{ supportedLanguages: ["en", "ja"] }}
+      links={links}
+      homeHref="#home"
+    >
+      <HomeSection />
+      <AboutMeSection />
+      <ProjectsSection />
+      <ContactSection />
+    </NavigationBarLayout>
   );
 };
