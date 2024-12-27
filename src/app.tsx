@@ -17,6 +17,8 @@ const NAV_LINKS_MAP: Record<string, string> = {
   contactSection: "contact",
 };
 
+const SUPPORTED_LANGUAGES = ["en", "ja"];
+
 export const App: React.FC = () => {
   const { t } = useTranslation();
 
@@ -29,9 +31,10 @@ export const App: React.FC = () => {
 
   return (
     <NavigationBarLayout
-      languageSelectProps={{ supportedLanguages: ["en", "ja"] }}
+      languageSelectProps={{ supportedLanguages: SUPPORTED_LANGUAGES }}
       links={links}
       homeHref="#home"
+      githubHref="https://github.com/jgaik/jgaik.github.io"
     >
       <HomeSection />
       <AboutMeSection />

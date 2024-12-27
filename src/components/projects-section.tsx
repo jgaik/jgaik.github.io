@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { PAGE_ORIGIN } from "../constants";
-import { Link } from "@yamori-design/react-components";
+import { Link, List } from "@yamori-design/react-components";
 
 const PROJECTS_LIST_MAP: Record<
   string,
@@ -18,7 +18,7 @@ const PROJECTS_LIST_MAP: Record<
       descriptionKey: "localChess",
     },
   ],
-  collaborative: [
+  contributing: [
     {
       name: "PapuApp",
       link: "https://papu.app",
@@ -31,25 +31,28 @@ export const ProjectsSection: React.FC = () => {
   const { t } = useTranslation(undefined, { keyPrefix: "projectsSection" });
 
   return (
-    <article id="projects">
+    <section id="projects" className="project-section">
       <h4>{t("title")}</h4>
-      <ul>
+      <List>
         {Object.entries(PROJECTS_LIST_MAP).map(([categoryKey, projects]) => (
-          <li key={categoryKey}>
-            <h6>{t(categoryKey)}</h6>
-            <ul>
+          <List.Item key={categoryKey} label={t(categoryKey)} labelTag="h6">
+            <List>
               {projects.map(({ name, link, descriptionKey }) => (
-                <li key={name}>
-                  <Link href={link} target="_blank">
-                    {name}
-                  </Link>
+                <List.Item
+                  key={name}
+                  label={
+                    <Link href={link} target="_blank">
+                      {name}
+                    </Link>
+                  }
+                >
                   <p>{t(`projectDescription.${descriptionKey}`)}</p>
-                </li>
+                </List.Item>
               ))}
-            </ul>
-          </li>
+            </List>
+          </List.Item>
         ))}
-      </ul>
-    </article>
+      </List>
+    </section>
   );
 };

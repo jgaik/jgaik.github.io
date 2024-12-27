@@ -12,7 +12,7 @@
   "projectsSection": {
     "title": "My Projects",
     "individual": "Individual",
-    "collaborative": "Collaborative",
+    "contributing": "Contributing",
     "projectDescription": {
       "yamoriDesign": "Personal design system implementation used for my web projects.",
       "localChess": "Simple chess game implementation working in local mode.",
