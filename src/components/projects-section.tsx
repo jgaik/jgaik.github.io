@@ -41,7 +41,10 @@ export const ProjectsSection: React.FC = () => {
                 <List.Item
                   key={name}
                   label={
-                    <Link href={link} target="_blank">
+                    <Link
+                      href={link}
+                      target={link.startsWith(PAGE_ORIGIN) ? "" : "_blank"}
+                    >
                       {name}
                     </Link>
                   }
