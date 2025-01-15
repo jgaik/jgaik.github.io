@@ -9,13 +9,18 @@ const PROJECTS_LIST_MAP: Record<
   individual: [
     {
       name: "Yamori Design",
-      link: PAGE_ORIGIN + "/yamori-design",
+      link: PAGE_ORIGIN + "/yamori-design/",
       descriptionKey: "yamoriDesign",
     },
     {
       name: "Local Chess",
-      link: PAGE_ORIGIN + "/local-chess",
+      link: PAGE_ORIGIN + "/local-chess/",
       descriptionKey: "localChess",
+    },
+    {
+      name: "Issued Recipes",
+      link: PAGE_ORIGIN + "/issued-recipes/",
+      descriptionKey: "issuedRecipes",
     },
   ],
   contributing: [

@@ -15,7 +15,8 @@
     "contributing": "Contributing",
     "projectDescription": {
       "yamoriDesign": "Personal design system implementation used for my web projects.",
-      "localChess": "Simple chess game implementation working in local mode.",
+      "localChess": "Chess game implementation working in local mode.",
+      "issuedRecipes": "Website showing recipes saved as GitHub issues.",
       "papuApp": "Web application aimed to improve orders management for small restaurants."
     }
   },
