@@ -1,7 +1,6 @@
 import { Link } from "@yamori-design/react-components";
 import React from "react";
 import { Trans, useTranslation } from "react-i18next";
-import "./about-me-section.scss";
 
 export const AboutMeSection: React.FC = () => {
   const { t, i18n } = useTranslation(undefined, {
