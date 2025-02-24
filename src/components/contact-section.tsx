@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "@yamori-design/react-components";
-import "./contact-section.scss";
+import { Link, List } from "@yamori-design/react-components";
 
 const CONTACT_LINKS: Array<
   Record<"name" | "link" | "iconSource" | "caption", string>
@@ -42,12 +41,7 @@ const ContactSectionLink: React.FC<(typeof CONTACT_LINKS)[number]> = ({
   caption,
 }) => {
   return (
-    <Link
-      href={link}
-      target="_blank"
-      className={name.toLowerCase()}
-      title={name}
-    >
+    <Link href={link} target="_blank" id={name.toLowerCase()} title={name}>
       <img src={iconSource} alt={name} />
       {caption}
     </Link>
@@ -58,16 +52,17 @@ export const ContactSection: React.FC = () => {
   const { t } = useTranslation(undefined, { keyPrefix: "contactSection" });
 
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact">
       <h4>{t("title")}</h4>
       <address>
-        <ul>
+        <List>
           {CONTACT_LINKS.map((contactLink) => (
-            <li key={contactLink.name}>
-              <ContactSectionLink {...contactLink} />
-            </li>
+            <List.Item
+              label={<ContactSectionLink {...contactLink} />}
+              key={contactLink.name}
+            />
           ))}
-        </ul>
+        </List>
       </address>
     </section>
   );

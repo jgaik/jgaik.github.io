@@ -1,0 +1,27 @@
+@use "@yamori-design/styles/src/mixins";
+
+.app__content {
+  section {
+    & + section {
+      margin-top: var(--yamori-spacing-large);
+    }
+
+    &#contact {
+      a img {
+        width: 1rem;
+      }
+    }
+
+    &#about-me {
+      h5 {
+        margin-top: var(--yamori-spacing-large);
+      }
+    }
+  }
+}
+
+@include mixins.within-yamori-theme(dark) {
+  section#contact a#github img {
+    filter: invert(1);
+  }
+}

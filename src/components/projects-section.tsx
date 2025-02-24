@@ -22,6 +22,11 @@ const PROJECTS_LIST_MAP: Record<
       link: PAGE_ORIGIN + "/issued-recipes/",
       descriptionKey: "issuedRecipes",
     },
+    {
+      name: "DSA Solutions",
+      link: PAGE_ORIGIN + "/dsa-solutions/",
+      descriptionKey: "dsaSolutions",
+    },
   ],
   contributing: [
     {
@@ -41,7 +46,7 @@ export const ProjectsSection: React.FC = () => {
       <List>
         {Object.entries(PROJECTS_LIST_MAP).map(([categoryKey, projects]) => (
           <List.Item key={categoryKey} label={t(categoryKey)} labelTag="h6">
-            <List>
+            <List bulleted>
               {projects.map(({ name, link, descriptionKey }) => (
                 <List.Item
                   key={name}

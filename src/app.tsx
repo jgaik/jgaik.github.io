@@ -10,6 +10,7 @@ import {
   NavigationBarLayoutProps,
 } from "@yamori-design/react-components";
 import { useTranslation } from "react-i18next";
+import "./app.scss";
 
 const NAV_LINKS_MAP: Record<string, string> = {
   aboutMeSection: "about-me",
@@ -31,6 +32,7 @@ export const App: React.FC = () => {
 
   return (
     <NavigationBarLayout
+      className="app"
       languageSelectProps={{ supportedLanguages: SUPPORTED_LANGUAGES }}
       links={links}
       homeHref="#home"

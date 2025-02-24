@@ -1,6 +1,7 @@
 import { Link } from "@yamori-design/react-components";
 import React from "react";
 import { Trans, useTranslation } from "react-i18next";
+import "./about-me-section.scss";
 
 export const AboutMeSection: React.FC = () => {
   const { t, i18n } = useTranslation(undefined, {
@@ -8,7 +9,7 @@ export const AboutMeSection: React.FC = () => {
   });
 
   return (
-    <section id="about-me">
+    <section id="about-me" className="about-me-section">
       <h4>{t("title")}</h4>
       {t("introduction")
         .split("\n")
