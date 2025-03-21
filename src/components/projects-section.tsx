@@ -27,6 +27,11 @@ const PROJECTS_LIST_MAP: Record<
       link: PAGE_ORIGIN + "/dsa-solutions/",
       descriptionKey: "dsaSolutions",
     },
+    {
+      name: "Daily Goals Tracker",
+      link: PAGE_ORIGIN + "/daily-goals-tracker/",
+      descriptionKey: "dailyGoalsTracker",
+    },
   ],
   contributing: [
     {
