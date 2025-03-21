@@ -24,7 +24,7 @@ export const App: React.FC = () => {
   const { t } = useTranslation();
 
   const links = Object.entries(NAV_LINKS_MAP).map<
-    NavigationBarLayoutProps["links"][number]
+    NonNullable<NavigationBarLayoutProps["links"]>[number]
   >(([key, id]) => ({
     href: `#${id}`,
     children: t(`${key}.title`),
