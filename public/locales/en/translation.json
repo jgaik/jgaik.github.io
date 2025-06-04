@@ -19,6 +19,8 @@
       "issuedRecipes": "Website showing recipes saved as GitHub issues.",
       "dsaSolutions": "Preview of my Data Structures and Algorithms problems code solutions.",
       "dailyGoalsTracker": "NextJS single page application previewing my Google sheet goals tracking using AgGrid.",
+      "bingo": "Website for managing and playing custom bingos.",
+      "designSystemCreator": "Single page application for creating a design system based on CSS variables.",
       "papuApp": "Web application aimed to improve orders management for small restaurants."
     }
   },

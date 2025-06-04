@@ -32,6 +32,16 @@ const PROJECTS_LIST_MAP: Record<
       link: PAGE_ORIGIN + "/daily-goals-tracker/",
       descriptionKey: "dailyGoalsTracker",
     },
+    {
+      name: "Bingo",
+      link: "https://bingo-yamori-projects.vercel.app/",
+      descriptionKey: "bingo",
+    },
+    {
+      name: "Design System Creator",
+      link: PAGE_ORIGIN + "/design-system-creator/",
+      descriptionKey: "designSystemCreator",
+    },
   ],
   contributing: [
     {

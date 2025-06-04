@@ -19,6 +19,8 @@
       "issuedRecipes": "GitHub Issues からレシピを見せるウェブサイトです。",
       "dsaSolutions": "私のデータ構造とアルゴリズムの問題解決コードのプレビュー。",
       "dailyGoalsTracker": "AgGridを使用してGoogleシートの目標追跡をプレビューするNextJSのSPA。",
+      "bingo": "カスタムビンゴを管理・プレイするためのウェブサイト。",
+      "designSystemCreator": "CSS変数に基づいたデザインシステムを作成するためのシングルページアプリケーション。",
       "papuApp": "小さいなレストランの注文の制度のためウェブアプリケーションです。"
     }
   },
