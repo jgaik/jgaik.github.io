@@ -16,7 +16,9 @@
       "localChess": "ローカルモードで働いてチェスゲームの実行です。",
       "issuedRecipes": "GitHub Issues からレシピを見せるウェブサイトです。",
       "dsaSolutions": "私のデータ構造とアルゴリズムの問題解決コードのプレビュー。",
-      "dailyGoalsTracker": "AgGridを使用してGoogleシートの目標追跡をプレビューするNextJSのSPA。"
+      "dailyGoalsTracker": "AgGridを使用してGoogleシートの目標追跡をプレビューするNextJSのSPA。",
+      "bingo": "カスタムビンゴを管理・プレイするためのウェブサイト。",
+      "designSystemCreator": "CSS変数に基づいたデザインシステムを作成するためのシングルページアプリケーション。"
     }
   },
   "contactSection": {

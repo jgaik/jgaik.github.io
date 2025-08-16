@@ -29,6 +29,16 @@ const PROJECTS_LIST: Array<Record<"name" | "link" | "descriptionKey", string>> =
       link: PAGE_ORIGIN + "/daily-goals-tracker/",
       descriptionKey: "dailyGoalsTracker",
     },
+    {
+      name: "Bingo",
+      link: "https://bingo-yamori-projects.vercel.app/",
+      descriptionKey: "bingo",
+    },
+    {
+      name: "Design System Creator",
+      link: PAGE_ORIGIN + "/design-system-creator/",
+      descriptionKey: "designSystemCreator",
+    },
   ];
 
 export const ProjectsSection: React.FC = () => {
