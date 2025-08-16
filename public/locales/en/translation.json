@@ -11,15 +11,12 @@
   },
   "projectsSection": {
     "title": "My Projects",
-    "individual": "Individual",
-    "contributing": "Contributing",
     "projectDescription": {
       "yamoriDesign": "Personal design system implementation used for my web projects.",
       "localChess": "Chess game implementation working in local mode.",
       "issuedRecipes": "Website showing recipes saved as GitHub issues.",
       "dsaSolutions": "Preview of my Data Structures and Algorithms problems code solutions.",
-      "dailyGoalsTracker": "NextJS single page application previewing my Google sheet goals tracking using AgGrid.",
-      "papuApp": "Web application aimed to improve orders management for small restaurants."
+      "dailyGoalsTracker": "NextJS single page application previewing my Google sheet goals tracking using AgGrid."
     }
   },
   "contactSection": {

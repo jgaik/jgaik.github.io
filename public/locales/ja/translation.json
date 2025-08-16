@@ -11,15 +11,12 @@
   },
   "projectsSection": {
     "title": "プロジェクト",
-    "individual": "個人",
-    "contributing": "協力",
     "projectDescription": {
       "yamoriDesign": "私のウェブプロジェクトには自分のデザイン制度の実行です。",
       "localChess": "ローカルモードで働いてチェスゲームの実行です。",
       "issuedRecipes": "GitHub Issues からレシピを見せるウェブサイトです。",
       "dsaSolutions": "私のデータ構造とアルゴリズムの問題解決コードのプレビュー。",
-      "dailyGoalsTracker": "AgGridを使用してGoogleシートの目標追跡をプレビューするNextJSのSPA。",
-      "papuApp": "小さいなレストランの注文の制度のためウェブアプリケーションです。"
+      "dailyGoalsTracker": "AgGridを使用してGoogleシートの目標追跡をプレビューするNextJSのSPA。"
     }
   },
   "contactSection": {
