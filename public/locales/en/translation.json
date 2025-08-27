@@ -15,6 +15,7 @@
       "yamoriDesign": "Personal design system implementation used for my web projects.",
       "localChess": "Chess game implementation working in local mode.",
       "issuedRecipes": "Website showing recipes saved as GitHub issues.",
+      "qr": "Website for generating and sharing QR codes",
       "dsaSolutions": "Preview of my Data Structures and Algorithms problems code solutions.",
       "dailyGoalsTracker": "NextJS single page application previewing my Google sheet goals tracking using AgGrid.",
       "bingo": "Website for managing and playing custom bingos.",

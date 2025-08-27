@@ -15,6 +15,7 @@
       "yamoriDesign": "私のウェブプロジェクトには自分のデザイン制度の実行です。",
       "localChess": "ローカルモードで働いてチェスゲームの実行です。",
       "issuedRecipes": "GitHub Issues からレシピを見せるウェブサイトです。",
+      "qr": "QRコードを生成して共有するためのウェブサイト。",
       "dsaSolutions": "私のデータ構造とアルゴリズムの問題解決コードのプレビュー。",
       "dailyGoalsTracker": "AgGridを使用してGoogleシートの目標追跡をプレビューするNextJSのSPA。",
       "bingo": "カスタムビンゴを管理・プレイするためのウェブサイト。",

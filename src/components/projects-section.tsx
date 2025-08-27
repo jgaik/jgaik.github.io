@@ -20,6 +20,11 @@ const PROJECTS_LIST: Array<Record<"name" | "link" | "descriptionKey", string>> =
       descriptionKey: "issuedRecipes",
     },
     {
+      name: "QR",
+      link: PAGE_ORIGIN + "/qr/",
+      descriptionKey: "qr",
+    },
+    {
       name: "DSA Solutions",
       link: PAGE_ORIGIN + "/dsa-solutions/",
       descriptionKey: "dsaSolutions",
