@@ -11,9 +11,9 @@
     "postinstall": "npm install @yamori-design/react-components@latest @yamori-design/icons@latest @yamori-design/styles@latest"
   },
   "dependencies": {
-    "@yamori-design/icons": "^1.9.0",
-    "@yamori-design/react-components": "^2.14.4",
-    "@yamori-design/styles": "^2.10.1",
+    "@yamori-design/icons": "^1.9.1",
+    "@yamori-design/react-components": "^2.14.5",
+    "@yamori-design/styles": "^2.10.2",
     "@yamori-shared/react-utilities": "^1.9.4",
     "i18next": "^25.4.2",
     "i18next-browser-languagedetector": "^8.2.0",
