@@ -19,6 +19,7 @@
       "dsaSolutions": "Preview of my Data Structures and Algorithms problems code solutions.",
       "dailyGoalsTracker": "NextJS single page application previewing my Google sheet goals tracking using AgGrid.",
       "bingo": "Website for managing and playing custom bingos.",
+      "pokemonRandomizer": "Installable app for finding random Pokémon and keeping a Pokédex of the ones you have seen and caught.",
       "designSystemCreator": "Single page application for creating a design system based on CSS variables."
     }
   },
