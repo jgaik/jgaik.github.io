@@ -40,6 +40,11 @@ const PROJECTS_LIST: Array<Record<"name" | "link" | "descriptionKey", string>> =
       descriptionKey: "bingo",
     },
     {
+      name: "Pokémon Randomizer",
+      link: PAGE_ORIGIN + "/pokemon-randomizer/",
+      descriptionKey: "pokemonRandomizer",
+    },
+    {
       name: "Design System Creator",
       link: PAGE_ORIGIN + "/design-system-creator/",
       descriptionKey: "designSystemCreator",
